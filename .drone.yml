@@ -1,0 +1,7 @@
+pipeline:
+  backend:
+    image: golang
+    commands:
+      - go test -v
+      - mkdir -p bin
+      - go build -o bin/main .
